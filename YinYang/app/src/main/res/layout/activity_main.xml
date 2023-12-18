@@ -15,7 +15,9 @@
         <ProgressBar
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:indeterminateDrawable="@drawable/anim_loading"
+            app:setIndeterminateProgressBar="@{@drawable/anim_loading}"
+            android:indeterminateDuration="1000"
+            android:indeterminateBehavior="repeat"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
