@@ -1,11 +1,11 @@
 package com.ziping.yinyang.util
 
 class ChineseEraUtil {
-    companion object{
+    companion object {
         @JvmField
-        val HEAVENLY_STEMS = listOf<String>("甲", "乙", "丙", "丁", "戊", "己", "庚", "辛", "壬", "癸")
+        val HEAVENLY_STEMS = listOf("甲", "乙", "丙", "丁", "戊", "己", "庚", "辛", "壬", "癸")
         @JvmField
-        val EARTHLY_BRANCHES = listOf<String>("子", "丑", "寅", "卯", "辰", "巳",
+        val EARTHLY_BRANCHES = listOf("子", "丑", "寅", "卯", "辰", "巳",
             "午", "未", "申", "酉", "戌", "亥")
 
         @JvmStatic

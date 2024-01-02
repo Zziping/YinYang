@@ -12,8 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         binding.getResult.setOnClickListener {
-            val year = binding.inputYear.text.toString().trim()
-            binding.resultText.text = ChineseEraUtil.calculateTime(year)
+            CustomDialog().show(supportFragmentManager, "111")
         }
     }
 }

@@ -6,4 +6,9 @@
     </style>
 
     <style name="Theme.YinYang" parent="Base.Theme.YinYang" />
+
+
+    <style name="CustomDialogStyle" parent="@style/Theme.AppCompat.Dialog">
+        <item name="android:windowIsFloating">true</item>
+    </style>
 </resources>
