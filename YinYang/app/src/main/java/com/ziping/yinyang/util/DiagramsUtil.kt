@@ -60,5 +60,13 @@ class DiagramsUtil {
             "高楼地起", "善始悔终", "日中则斜", "拨乱反正",
             "有容乃大", "内刚外柔", "拯救涣散", "万物有节",
             "诚信立身", "动静有度", "初吉终乱", "事业未竟")
+
+        @JvmStatic
+        fun getDiagram(up: String, down: String) : Int {
+            val posUp = DIAGRAM_8.indexOf(up)
+            val posDown = DIAGRAM_8.indexOf(down)
+            val imagery = if (posUp == posDown) IMAGERY_8[posUp] else IMAGERY_8[posUp] + IMAGERY_8[posDown]
+            return IMAGERY_64.indexOf(imagery)
+        }
     }
 }
