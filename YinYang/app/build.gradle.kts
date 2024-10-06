@@ -40,6 +40,29 @@ android {
     }
 }
 
+buildscript{
+    repositories{
+        maven {
+            url = uri("https://maven.aliyun.com/repository/public")
+        }
+        maven {
+            url = uri("https://maven.aliyun.com/repository/jcenter")
+        }
+        maven {
+            url = uri("https://maven.aliyun.com/repository/gradle-plugin")
+        }
+        maven {
+            url = uri("https://maven.aliyun.com/repository/google")
+        }
+        maven {
+            url = uri("https://maven.aliyun.com/repository/central")
+        }
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
 dependencies {
 
     implementation("androidx.core:core-ktx:1.9.0")
